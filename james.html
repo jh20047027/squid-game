@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>自定義多選下拉式選單</title>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropdown-toggle" onclick="toggleDropdown()">選擇</button>
+        <div class="dropdown-menu">
+            <input type="checkbox" id="option1" value="Option 1">
+            <label for="option1">Option 1</label><br>
+            <input type="checkbox" id="option2" value="Option 2">
+            <label for="option2">Option 2</label><br>
+            <input type="checkbox" id="option3" value="Option 3">
+            <label for="option3">Option 3</label><br>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            var dropdownMenu = document.querySelector('.dropdown-menu');
+            dropdownMenu.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
